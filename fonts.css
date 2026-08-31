@@ -1,0 +1,32 @@
+.roboto {
+  font-family: "Roboto", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-italic {
+  font-family: "Roboto", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.iansui {
+  font-family: "Iansui", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
