@@ -1,0 +1,30 @@
+$(document).ready(function () {
+    function loadPage(pageName) {
+        const filePath = `pages/${pageName}.html`;
+
+        $.get(filePath, function (data) {
+            const $content = $(data);
+
+            const pageTitle = $content.data("title");
+            const pageSubtitle = $content.data("subtitle");
+
+            if (pageTitle) $("#hero-title").text(pageTitle);
+            if (pageSubtitle) $("#hero-subtitle").text(pageSubtitle);
+
+            $("#main-content").html($content.html());
+        }).fail(function () {
+            $("#main-content").html("<p>Error loading page content.</p>");
+        });
+    }
+
+    $(".nav-link").on("click", function (e) {
+        e.preventDefault();
+        
+        const page = $(this).data("page"); 
+        if (page) {
+            loadPage(page);
+        }
+    });
+
+    loadPage("self-intro");
+});

@@ -90,13 +90,18 @@ header {
     background-size: 100%;
     background-position: bottom;
     color: var(--banner-text-color);
-    padding: 8rem 4rem;
+    padding: 6.5rem 4rem;
     text-align: center;
 }
 
 .hero-banner h1 {
-    font-size: 2.25rem;
+    font-size: 5rem;
     margin-bottom: 0.75rem;
+}
+
+.hero-banner p {
+    font-size: 1.25rem;
+    /* margin-bottom: 0.75rem; */
 }
 
 .hero-shade {
