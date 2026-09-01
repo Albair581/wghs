@@ -58,6 +58,7 @@ header {
     color: var(--header-link-color);
     font-weight: 500;
     transition: color 0.4s;
+    cursor: pointer;
 }
 
 .nav-links a:hover {
