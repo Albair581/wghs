@@ -23,6 +23,8 @@ $(document).ready(function () {
         const page = $(this).data("page"); 
         if (page) {
             loadPage(page);
+            $(".nav-link").removeClass("lks");
+            $(this).addClass("lks");
         }
     });
 

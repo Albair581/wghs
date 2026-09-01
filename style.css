@@ -65,6 +65,11 @@ header {
     color: var(--header-text-color);
 }
 
+.nav-links a.lks {
+    color: var(--header-text-color);
+    text-decoration: underline;
+}
+
 #menu-toggle {
     display: none;
 }
