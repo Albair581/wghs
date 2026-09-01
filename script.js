@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    function loadPage(pageName) {
+    function loadPage(pageName, link) {
         const filePath = `pages/${pageName}.html`;
 
         $.get(filePath, function (data) {
@@ -12,7 +12,7 @@ $(document).ready(function () {
             if (pageSubtitle) $("#hero-subtitle").text(pageSubtitle);
 
             $("#main-content").html($content.html());
-            
+
             $(".nav-link").removeClass("lks");
             $(this).addClass("lks");
         }).fail(function () {
@@ -25,7 +25,7 @@ $(document).ready(function () {
         
         const page = $(this).data("page"); 
         if (page) {
-            loadPage(page);
+            loadPage(page, this);
         }
     });
 
