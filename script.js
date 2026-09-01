@@ -29,5 +29,5 @@ $(document).ready(function () {
         }
     });
 
-    loadPage("self-intro");
+    loadPage("self-intro", $(".nav-link[data-page='self-intro']"));
 });
