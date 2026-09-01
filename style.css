@@ -68,6 +68,9 @@ header {
 .nav-links a.lks {
     color: var(--header-text-color);
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--header-text-color);
+    text-underline-offset: 8px;
 }
 
 #menu-toggle {

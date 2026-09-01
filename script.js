@@ -12,6 +12,9 @@ $(document).ready(function () {
             if (pageSubtitle) $("#hero-subtitle").text(pageSubtitle);
 
             $("#main-content").html($content.html());
+            
+            $(".nav-link").removeClass("lks");
+            $(this).addClass("lks");
         }).fail(function () {
             $("#main-content").html("<p>Error loading page content.</p>");
         });
@@ -23,8 +26,6 @@ $(document).ready(function () {
         const page = $(this).data("page"); 
         if (page) {
             loadPage(page);
-            $(".nav-link").removeClass("lks");
-            $(this).addClass("lks");
         }
     });
 
