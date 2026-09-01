@@ -14,7 +14,7 @@ $(document).ready(function () {
             $("#main-content").html($content.html());
 
             $(".nav-link").removeClass("lks");
-            $(this).addClass("lks");
+            $(link).addClass("lks");
         }).fail(function () {
             $("#main-content").html("<p>Error loading page content.</p>");
         });
